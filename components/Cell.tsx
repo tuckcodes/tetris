@@ -1,7 +1,6 @@
-
 import React from 'react';
-import { TETROMINOS } from '../constants';
-import { TetrominoKey } from '../types';
+import { TETROMINOS } from '../constants.ts';
+import { TetrominoKey } from '../types.ts';
 
 type Props = {
   type: TetrominoKey;

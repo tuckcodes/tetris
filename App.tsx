@@ -1,11 +1,10 @@
-
 import React, { useState, useCallback, useEffect, useRef } from 'react';
-import { BOARD_WIDTH, TETROMINOS, randomTetromino } from './constants';
-import { createBoard, checkCollision } from './services/gameHelpers';
-import { Player, BoardType, TetrominoKey, BoardCell } from './types';
-import Board from './components/Board';
-import InfoDisplay from './components/InfoDisplay';
-import StartButton from './components/StartButton';
+import { BOARD_WIDTH, TETROMINOS, randomTetromino } from './constants.ts';
+import { createBoard, checkCollision } from './services/gameHelpers.ts';
+import { Player, BoardType, TetrominoKey, BoardCell } from './types.ts';
+import { Board } from './components/Board.tsx';
+import { InfoDisplay } from './components/InfoDisplay.tsx';
+import { StartButton } from './components/StartButton.tsx';
 
 // Custom hook for game interval
 const useInterval = (callback: () => void, delay: number | null) => {

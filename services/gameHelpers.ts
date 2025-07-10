@@ -1,6 +1,5 @@
-
-import { BOARD_WIDTH, BOARD_HEIGHT } from '../constants';
-import { BoardType, Player, BoardCell } from '../types';
+import { BOARD_WIDTH, BOARD_HEIGHT } from '../constants.ts';
+import { BoardType, Player, BoardCell } from '../types.ts';
 
 export const createBoard = (): BoardType =>
   Array.from({ length: BOARD_HEIGHT }, () =>
